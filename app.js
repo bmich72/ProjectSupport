@@ -17,6 +17,8 @@ app.listen(port, (request, res) => {
 import express from 'express';
 import bodyParser from 'body-parser';
 import mongoose from 'mongoose';
+import dotenv from 'dotenv';
+require('dotenv').config();
 //import logger from 'morgan';
 // set up dependencies
 const app = express();
@@ -24,7 +26,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(logger('dev'));
 // set up mongoose
-mongoose.connect('mongodb://localhost/projectsupport')
+mongoose.connect('process.env.MONGODB')
   .then(()=> {
     console.log('Database connected');
   })
