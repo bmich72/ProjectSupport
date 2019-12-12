@@ -1,0 +1,22 @@
+{
+  "name": "projectsupport",
+  "version": "1.0.0",
+  "description": "This open source project is a development environment you can use for your other projects",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bmich72/ProjectSupport.git"
+  },
+  "author": "Bryan Micheal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bmich72/ProjectSupport/issues"
+  },
+  "homepage": "https://github.com/bmich72/ProjectSupport#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
